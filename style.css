@@ -1,9 +1,12 @@
 :root {
-  --cor-fundo: #01080E;
-  --cor-principal: #0B0D20;
-  --cor-secundaria: #212333;
-  --cor-destaque: #2BDEFD;
-  --cor-texto: #D7F9FF;
+  :root {
+  --cor-fundo: #FDFBF7;       /* Bege suave e limpo */
+  --cor-principal: #FFE5EC;   /* Rosa claro delicado */
+  --cor-secundaria: #E2F0D9;  /* Verde claro refrescante */
+  --cor-destaque: #C5E1A5;    /* Verde claro um pouco mais vivo */
+  --cor-texto: #C94A65;       
+}
+
 }
 
 body {
