@@ -1,139 +1,120 @@
-::root {
-  --bg-color: #f7f4ee;
-  --card-bg: #ffffff;
-  --primary-color: #059669;
-  --primary-hover: #047857;
-  --accent-pink: #f472b6;
-  --text-color: #1f2937;
-  --text-muted: #6b7280;
-  --border-color: #e5e7eb;
-  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05),
-    0 8px 10px -6px rgba(0, 0, 0, 0.01);
+:root {
+    --bg-color: #f7f4ee;
+    --card-bg: #ffffff;
+    --primary-color: #059669;
+    --primary-hover: #047857;
+    --accent-pink: #f472b6;
+    --text-color: #1f2937;
+    --text-muted: #6b7280;
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .caixa-principal {
-  width: 100%;
-  max-width: 600px;
-  padding: 32px;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: var(--shadow);
+    border: 1px solid #e5e7eb;
 }
 
 h1 {
-  margin-bottom: 8px;
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .progresso {
-  margin-bottom: 24px;
-  color: var(--accent-pink);
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-align: center;
+    font-size: 0.875rem;
+    color: var(--accent-pink);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .caixa-perguntas {
-  margin-bottom: 24px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-weight: 500;
 }
 
 .caixa-alternativas {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .caixa-alternativas button {
-  padding: 14px 18px;
-  border: 2px solid var(--border-color);
-  border-radius: 8px;
-  background-color: #f9fafb;
-  color: var(--text-color);
-  font-size: 0.95rem;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
-    transform 0.2s ease;
+    background-color: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
 }
 
 .caixa-alternativas button:hover {
-  border-color: var(--primary-color);
-  background-color: #ecfdf5;
-  transform: translateY(-2px);
-}
-
-.caixa-alternativas button:focus-visible,
-.btn-reiniciar:focus-visible {
-  outline: 3px solid var(--accent-pink);
-  outline-offset: 3px;
+    border-color: var(--primary-color);
+    background-color: #ecfdf5;
+    transform: translateY(-2px);
 }
 
 .caixa-resultado {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .texto-resultado {
-  margin-bottom: 20px;
-  padding: 20px;
-  border-left: 4px solid var(--accent-pink);
-  border-radius: 8px;
-  background-color: #fdf2f8;
-  color: #374151;
-  font-size: 1.05rem;
-  line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151;
+    background-color: #fdf2f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-pink);
+    margin-bottom: 20px;
 }
 
 .btn-reiniciar {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+    display: block;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .btn-reiniciar:hover {
-  background-color: var(--primary-hover);
+    background-color: var(--primary-hover);
 }
 
 .escondido {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .caixa-principal {
-    padding: 24px 20px;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
+    display: none;
 }
